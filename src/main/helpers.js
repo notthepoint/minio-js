@@ -45,7 +45,7 @@ export function getScope(region, date) {
 
 // isAmazonEndpoint - true if endpoint is 's3.amazonaws.com'.
 export function isAmazonEndpoint(endpoint) {
-  return endpoint === 's3.amazonaws.com'
+  return endpoint.endswith('s3.amazonaws.com');
 }
 
 // isVirtualHostStyle - verify if bucket name is support with virtual
